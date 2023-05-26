@@ -180,14 +180,14 @@ class Telegram:
         update.message.reply_text('Ben bir Telegram botuyum')
 
 
-api_key = "03582fac-bc9a-4097-a350-e080f3e57a4b"
-api_secret = "wFhXPxRm5jcVoOthqCzYRf6CjI7rv0l4"
-pair_symbol = "USDTTRY"
+api_key = "BTC_API_KEY"
+api_secret = "BTC_SECRET_KEY"
+pair_symbol = "COIN"
 quantity = 60
 btcturk_bot = BtcTurkBot(api_key, api_secret, pair_symbol, quantity)
 
-telegram_token = '6247116301:AAFShT7Nk9yn-Hm5AfbPYPAO7EMDBV5TYOY'
-telegram_chat_id = '804636818'
+telegram_token = 'TELEGRAM_TOKEN'
+telegram_chat_id = 'TELEGRAM_CHAT_ID'
 telegram = Telegram(telegram_token, telegram_chat_id)
 data = Data('15m', 'usdttry', 14, telegram, btcturk_bot)
 telegram.run_bot(data)
